@@ -1,1 +1,1 @@
-parallel -a $1 bash ./bin/combined_script.sh
+parallel --eta bash ./bin/combined_script.sh {1} {2} :::: $1 ::: $2
