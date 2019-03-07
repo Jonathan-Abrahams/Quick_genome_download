@@ -28,7 +28,7 @@ ERR552440
 
 ```
 
-Run the command(needs to be renamed)
+Run the command(needs to be renamed). At the moment it is limited to the first 2 million spots. This needs to be made into a user input
 
 ```
  bash bin/xargs_script.sh AMR_TB_GENOMES ./Reference/GCF_000195955.2_ASM19595v2_genomic.fna
