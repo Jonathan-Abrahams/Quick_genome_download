@@ -8,13 +8,13 @@ args = commandArgs(trailingOnly=TRUE)
 #aim ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR912/003/SRR9123503/SRR9123503_1.fastq.gz
 
 #First 6
-
+# ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR131/035/SRR13180335/SRR13180335_1.fastq.gz
 First_6=substr(args[1],1,6)
 lenny=nchar(args[1])
 if(lenny>=10)
 {
 
-Last_1_modified=paste("00",substr(args[1],lenny,lenny),sep="")
+Last_1_modified=paste("0",substr(args[1],lenny-1,lenny),sep="")
 
 full_url_1=paste("ftp://ftp.sra.ebi.ac.uk/vol1/fastq",First_6,Last_1_modified,args[1],paste(args[1],"_1.fastq.gz",sep=""),sep="/")
 full_url_2=paste("ftp://ftp.sra.ebi.ac.uk/vol1/fastq",First_6,Last_1_modified,args[1],paste(args[1],"_2.fastq.gz",sep=""),sep="/")
